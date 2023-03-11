@@ -1,0 +1,26 @@
+.calculator {
+  min-width: 300px;
+}
+
+.header {
+  font-size: 80%;
+}
+
+.calc-container {
+  --gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - ((var(--gap) * 3) / 4)));
+  grid-template-rows: repeat(5, calc(20% - ((var(--gap) * 4) / 5)));
+  gap: var(--gap);
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.button {
+  width: 64px;
+  height: 48px;
+}
+
+.equal {
+  width: 128px;
+}

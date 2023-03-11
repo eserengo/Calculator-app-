@@ -1,0 +1,182 @@
+:root {
+
+/* ### Theme 1 */
+
+/* #### Backgrounds */
+
+--VeryDarkDesaturatedBlue-MainBackground: hsl(222, 26%, 31%);
+--VeryDarkDesaturatedBlue-ToggleBackground-KeypadBackground: hsl(223, 31%, 20%);
+--VeryDarkDesaturatedBlue-ScreenBackground: hsl(224, 36%, 15%);
+
+/* #### Keys */
+
+--Desaturated-Dark-Blue-KeyBackground: hsl(225, 21%, 49%);
+--DesaturatedDarkBlue-KeyShadow: hsl(224, 28%, 35%);
+
+--Red-KeyBackground-Toggle: hsl(6, 63%, 50%);
+--DarkRed-KeyShadow: hsl(6, 70%, 34%);
+
+--LightGrayishOrange-KeyBackground: hsl(30, 25%, 89%);
+--GrayishOrange-KeyShadow: hsl(28, 16%, 65%);
+
+/* #### Text */
+
+--VeryDarkGrayishBlue-Text: hsl(221, 14%, 31%);
+--White-Text: hsl(0, 0%, 99%);
+
+
+/* ### Theme 2 */
+
+/* #### Backgrounds */
+
+--LightGray-MainBackground: hsl(0, 0%, 90%);
+--GrayishRed-ToggleBackground-KeypadBackground: hsl(0, 5%, 81%);
+--VeryLightGray-ScreenBackground: hsl(0, 0%, 93%);
+
+/* #### Keys */
+
+--DarkModerateCyan-KeyBackground: hsl(185, 42%, 37%);
+--VeryDarkCyan-KeyShadow: hsl(185, 58%, 25%);
+
+--Orange-KeyBackground-Toggle: hsl(25, 98%, 40%);
+--DarkOrange-KeyShadow: hsl(25, 99%, 27%);
+
+--LightGrayishYellow-KeyBackground: hsl(45, 7%, 89%);
+--DarkGrayishOrange-KeyShadow: hsl(35, 11%, 61%);
+
+/* #### Text */
+
+--VeryDarkGrayishYellow-Text: hsl(60, 10%, 19%);
+
+/* ### Theme 3 */
+
+/* #### Backgrounds */
+
+--VeryDarkViolet-MainBackground: hsl(268, 75%, 9%);
+--VeryDarkViolet-ToggleBackground-KeypadBackground-ScreenBackground: hsl(268, 71%, 12%);
+
+/* #### Keys */
+
+--DarkViolet-KeyBackground: hsl(281, 89%, 26%);
+--VividMagenta-KeyShadow: hsl(285, 91%, 52%);
+
+--PureCyan-KeyBackground-Toggle: hsl(176, 100%, 44%);
+--SoftCyan-KeyShadow: hsl(177, 92%, 70%);
+
+--VeryDarkViolet-KeyBackground: hsl(268, 47%, 21%);
+--DarkMagenta-KeyShadow: hsl(290, 70%, 36%);
+
+/* #### Text */
+
+--LightYellow-Text: hsl(52, 100%, 62%);
+--VeryDarkBlue-Text: hsl(198, 20%, 13%);
+}
+
+.radio:checked {
+  background-color: var(--Red-KeyBackground-Toggle);
+}
+
+#one {
+  background-color: var(--VeryDarkDesaturatedBlue-MainBackground);
+}
+
+#one .header {
+  color: var(--White-Text);
+}
+
+#one .display {
+  background-color: var(--VeryDarkDesaturatedBlue-ScreenBackground);
+  color: var(--White-Text);
+}
+
+#one :where(.calc-container, .toggle) {
+  background-color: var(--VeryDarkDesaturatedBlue-ToggleBackground-KeypadBackground);
+}
+
+#one .operator {
+  background-color: var(--Desaturated-Dark-Blue-KeyBackground);
+  box-shadow: 1px 4px 1px var(--DesaturatedDarkBlue-KeyShadow);
+  color: var(--White-Text);
+}
+
+#one .number {
+  background-color: var(--LightGrayishOrange-KeyBackground);
+  box-shadow: 1px 4px 1px var(--GrayishOrange-KeyShadow);
+  color: var(--VeryDarkGrayishBlue-Text);
+}
+
+#one .equal {
+  background-color: var(--Red-KeyBackground-Toggle);
+  box-shadow: 1px 4px 1px var(--DarkRed-KeyShadow);
+  color: var(--White-Text);
+}
+
+#two {
+  background-color: var(--LightGray-MainBackground);
+}
+
+#two .header {
+  color: var(--VeryDarkGrayishYellow-Text);
+}
+
+#two .display {
+  background-color: var(--VeryLightGray-ScreenBackground);
+  color: var(--VeryDarkGrayishYellow-Text);
+}
+
+#two :where(.calc-container, .toggle) {
+  background-color: var(--GrayishRed-ToggleBackground-KeypadBackground);
+}
+
+#two .operator {
+  background-color: var(--DarkModerateCyan-KeyBackground);
+  box-shadow: 1px 4px 1px var(--VeryDarkCyan-KeyShadow);
+  color: var(--White-Text);
+}
+
+#two .number {
+  background-color: var(--LightGrayishYellow-KeyBackground);
+  box-shadow: 1px 4px 1px var(--DarkGrayishOrange-KeyShadow);
+  color: var(--VeryDarkGrayishYellow-Text);
+}
+
+#two .equal {
+  background-color: var(--Orange-KeyBackground-Toggle);
+  box-shadow: 1px 4px 1px var(--DarkOrange-KeyShadow);
+  color: var(--White-Text);
+}
+
+#three {
+  background-color: var(--VeryDarkViolet-MainBackground);
+}
+
+#three .header {
+  color: var(--LightYellow-Text);
+}
+
+#three .display {
+  background-color: var(--VeryDarkViolet-ToggleBackground-KeypadBackground-ScreenBackground);
+  color: var(--LightYellow-Text);
+}
+
+#three :where(.calc-container, .toggle) {
+  background-color: var(--VeryDarkViolet-ToggleBackground-KeypadBackground-ScreenBackground);
+}
+
+#three .operator {
+  background-color: var(--DarkViolet-KeyBackground);
+  box-shadow: 1px 4px 1px var(--VividMagenta-KeyShadow);
+  color: var(--White-Text);
+}
+
+#three .number {
+  background-color: var(--VeryDarkViolet-KeyBackground);
+  box-shadow: 1px 4px 1px var(--DarkMagenta-KeyShadow);
+  color: var(--LightYellow-Text);
+}
+
+#three .equal {
+  background-color: var(--PureCyan-KeyBackground-Toggle);
+  box-shadow: 1px 4px 1px var(--SoftCyan-KeyShadow);
+  color: var(--VeryDarkBlue-Text);
+}

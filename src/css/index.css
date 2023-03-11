@@ -1,0 +1,145 @@
+/*
+ Name: Calculator app.
+ Description: A Frontendmentor.io coding challenge.
+ Author: Federico Borzani
+ Author URL:  https://github.com/eserengo/
+*/
+
+:root {
+  font-family: "League Spartan";
+  font-size: 32px;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0%;
+  margin: 0%;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.calculator {
+  padding: 32px;
+  gap: 32px;
+}
+
+.theme-container {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-template-rows: repeat(2, 45%);
+  gap: 10%;
+  font-size: 40%;
+}
+
+.labels {
+  gap: 16px;
+}
+
+.toggle {
+  gap: 8px;
+  border-radius: 16px;
+  height: 24px;
+}
+
+.radio {
+  opacity: 0%;
+  transition: all 1.2s ease;
+}
+
+.radio:checked {
+  appearance: none;
+  opacity: 100%;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.legend {
+  margin-right: 24px;
+  margin-top: 8px;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display {
+  font-family: "League Spartan";
+  font-size: 100%;
+  font-weight: 700;
+  text-align: right;
+  border-radius: 8px;
+  height: 96px;
+  padding: 32px;
+}
+
+.row-1 {
+  grid-row: 1;
+}
+
+.row-2 {
+  grid-row: 2;
+}
+
+.row-3 {
+  grid-row: 3;
+}
+
+.row-4 {
+  grid-row: 4;
+}
+
+.row-5 {
+  grid-row: 5;
+}
+
+.col-1 {
+  grid-column: 1;
+}
+
+.col-2 {
+  grid-column: 2;
+}
+
+.col-3 {
+  grid-column: 3;
+}
+
+.col-4 {
+  grid-column: 4;
+}
+
+.equal {
+  grid-column: 3 / span 2;
+}
+
+.button {
+  font-family: "League Spartan";
+  font-size: 100%;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+}
+
+.button:active {
+  box-shadow: none !important;
+  transition: all 0.4s ease;
+  transform: translate(5%, 5%);
+  user-select: none;
+}
+
+.attribution {
+  font-size: 40%;
+  margin-top: 8px;
+}
